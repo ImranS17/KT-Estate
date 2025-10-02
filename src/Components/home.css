@@ -1,0 +1,1284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner CSS */
+
+.banner {
+    background: url(/Images/Banner.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-height: 600px;
+}
+
+.banner-text {
+    width: 45%;
+    padding-left: 104px;
+    padding-top: 70px;
+}
+
+.banner-text h1 {
+    padding-bottom: 20px;
+    font-size: 60px;
+    line-height: 69px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner-text span {
+    font-style: italic;
+}
+
+.banner-text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    margin-top: 28px;
+}
+
+#book {
+    padding: 14px 28px;
+    color: #01447C;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#book:focus {
+    outline: none;
+}
+
+#brochure {
+    background-color: #01447C;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 28px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 18px;
+    font-weight: 600;
+}
+
+#brochure:focus {
+    outline: none;
+}
+
+#brochure img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    border: 1px solid #01447C;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .banner-text {
+        padding-left: 60px;
+    }
+
+    .banner-text h1 {
+        width: 450px;
+        font-size: 50px;
+        line-height: 57px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .banner-text {
+        padding-left: 30px;
+        width: 65%;
+    }
+
+    .banner-text h1 {
+        width: 450px;
+        font-size: 50px;
+        line-height: 57px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .banner-text {
+        padding-left: 30px;
+        width: 65%;
+    }
+
+    .banner-text h1 {
+        width: 450px;
+        font-size: 50px;
+        line-height: 57px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .banner {
+        width: 100%;
+        align-items: end;
+        padding-bottom: 50px;
+    }
+
+    .banner-text {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .banner-text h1 {
+        width: 94%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    #brochure {
+        margin-left: 0px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+
+/* About CSS */
+.about {
+    display: flex;
+    margin: 67px 0px;
+}
+
+.about-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.about-image img {
+    width: 700px;
+    height: 550px;
+    transition: opacity 0.7s ease;
+}
+
+.hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+.default:hover {
+    opacity: 0;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-text {
+    text-align: center;
+    padding: 0px 67px;
+}
+
+.all-text h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #434343;
+    line-height: 50px;
+    width: 500px;
+    margin: auto
+}
+
+.all-text span {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    color: #01447C;
+}
+
+.all-text h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    padding-bottom: 36px;
+}
+
+.all-text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .about {
+        margin: 40px 30px 40px 0px;
+        display: block;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    .all-text {
+        text-align: left;
+        padding: 0px 30px;
+    }
+
+    .all-text h3 {
+        margin: 0px 0px 5px 0px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .all-text span {
+        font-size: 30px;
+    }
+
+    .all-text h6 {
+        padding-bottom: 25px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .about {
+        margin: 40px 30px 40px 0px;
+        display: block;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    .all-text {
+        text-align: left;
+        padding: 0px 30px;
+    }
+
+    .all-text h3 {
+        margin: 0px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 55%;
+    }
+
+    .all-text span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .about {
+        margin: 40px 20px 40px 0px;
+        display: block;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    .all-text {
+        text-align: left;
+        padding: 0px 20px;
+    }
+
+    .all-text h3 {
+        margin: 0px;
+        font-size: 25px;
+        line-height: 35px;
+        width: 95%;
+        padding-bottom: 10px;
+    }
+
+    .all-text span {
+        font-size: 25px;
+    }
+}
+
+
+/* Developments CSS */
+
+.landmark {
+    background-color: #01447C;
+    padding: 57px 70px;
+}
+
+.land-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.land-text h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.land-text p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    max-width: 510px;
+    padding-top: 10px;
+}
+
+.proj-land {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.proj1 img {
+    width: 310px;
+    height: 340px;
+    margin: 25px 0px;
+}
+
+.proj1 {
+    position: relative;
+}
+
+.proj1 h4 {
+    position: absolute;
+    bottom: 75px;
+    left: 100px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.proj1 p {
+    position: absolute;
+    bottom: 60px;
+    left: 110px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .proj-land {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .landmark {
+        padding: 40px 30px;
+    }
+
+    .land-text {
+        display: block;
+    }
+
+    .land-text h3 {
+        font-size: 30px;
+    }
+
+    .land-text p {
+        text-align: left;
+        margin-bottom:15px;
+    }
+
+    .proj-land {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .proj1 img {
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
+        margin: 15px 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .landmark {
+        padding: 40px 30px;
+    }
+
+    .land-text {
+        display: block;
+    }
+
+    .land-text h3 {
+        font-size: 30px;
+    }
+
+    .land-text p {
+        text-align: left;
+    }
+
+    .proj-land {
+        display: block;
+    }
+
+    .proj1 img {
+        width: 100%;
+        margin: 15px 0px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .landmark {
+        padding: 40px 20px;
+    }
+
+    .land-text {
+        display: block;
+    }
+
+    .land-text h3 {
+        font-size: 30px;
+    }
+
+    .land-text p {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .proj-land {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .proj1 img {
+        width: 100%;
+        object-fit: contain;
+        margin: 15px 0px;
+    }
+
+    .btn1 {
+        margin-top: 15px;
+    }
+
+}
+
+/* Why Choose CSS */
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0px 70px 170px;
+}
+
+.left-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-head {
+    max-width: 455px;
+}
+
+.choose-head h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #434343;
+    line-height: 50px;
+}
+
+.choose-head span {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    color: #01447C;
+}
+
+.choose-head p {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    width: 309px;
+    margin: 15px auto 0;
+}
+
+.choose-list {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.list1 {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list1 img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.ctext {
+    width: 100%;
+    max-width: 275px;
+}
+
+.ctext span {
+    color: #01447C;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ctext p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.choose-image {
+    width: 650px;
+    height: 500px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .choose {
+        display: block;
+        margin: 40px 30px;
+    }
+
+    .left-choose {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .choose-head {
+        max-width: 100%;
+    }
+
+    .choose-head h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .choose-head span {
+        font-size: 30px;
+    }
+
+    .choose-head p {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .choose-list {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .list1 {
+        justify-content: flex-start;
+    }
+
+    .choose-image {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .choose {
+        display: block;
+        margin: 40px 30px;
+    }
+
+    .left-choose {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .choose-head {
+        width: 100%;
+    }
+
+    .choose-head h3 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 80%;
+    }
+
+    .choose-head span {
+        font-size: 30px;
+    }
+
+    .choose-head p {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .choose-list {
+        margin-top: 30px;
+    }
+
+    .list1 {
+        justify-content: flex-start;
+    }
+
+    .choose-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .choose {
+        display: block;
+        margin: 40px 0px 40px 20px;
+    }
+
+    .left-choose {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .choose-head {
+        width: 100%;
+    }
+
+    .choose-head h3 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .choose-head span {
+        font-size: 30px;
+    }
+
+    .choose-head p {
+        margin: 20px 0px;
+    }
+
+    .choose-list {
+        margin-top: 30px;
+    }
+
+    .list1 {
+        justify-content: flex-start;
+    }
+
+    .choose-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* Forms CSS */
+
+.forms {
+    background: url(/Images/Investment.png) no-repeat center center;
+    background-size: cover;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 60px 0px;
+}
+
+.forms-text h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.forms-text span {
+    font-style: italic;
+}
+
+.forms-text p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    max-width: 540px;
+    padding: 25px 0px;
+}
+
+.form-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 8px 25px rgb(0 0 0 / 39%);
+    width: 580px;
+}
+
+.form-heading {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    color: #444;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: #111111;
+}
+
+.form-group input {
+    padding: 15px 17px;
+    border: 1px solid #F1F1F1;
+    border-radius: 40px;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-submit button {
+    background: #01447C;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-submit button:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .forms {
+        display: block;
+        padding: 40px 30px;
+    }
+
+    .forms-text h3 {
+        font-size: 30px;
+    }
+
+    .forms-text p {
+        text-align: left;
+    }
+
+    .form-card {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .form-heading {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-submit {
+        display: block;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .forms {
+        display: block;
+        padding: 40px 30px;
+    }
+
+    .forms-text h3 {
+        font-size: 30px;
+    }
+
+    .forms-text p {
+        text-align: left;
+    }
+
+    .form-card {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .form-heading {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-submit {
+        display: block;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .forms {
+        display: block;
+        padding: 40px 20px;
+    }
+
+    .forms-text h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .forms-text p {
+        text-align: left;
+    }
+
+    .form-card {
+        padding: 30px 20px;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .form-heading {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-submit {
+        display: block;
+    }
+}
+
+/* Investor CSS */
+
+.investor {
+    background-color: #F1F1F1;
+    height: 100%;
+    max-height: 600px;
+    padding: 48px 100px;
+    position: relative;
+}
+
+.invest-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.invest-text h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #434343;
+}
+
+.invest-text span {
+    color: #01447C;
+    font-style: italic;
+}
+
+.invest-text p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 15px;
+}
+
+#quot {
+    height: 315px;
+    width: 315px;
+    object-fit: contain;
+    position: absolute;
+    top: 60px;
+}
+
+.all-investor {
+    display: flex;
+    gap: 50px;
+}
+
+.invest-profile {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 100px 40px 40px 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.invest-profile img {
+    width: 160px;
+    position: absolute;
+    top: -75px;
+}
+
+
+.invest-profile h3 {
+    color: #01447C;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.invest-profile p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .investor {
+        height: 100%;
+        max-height: 15%;
+        padding: 40px 30px 0px 30px;
+    }
+
+    .invest-text {
+        display: block;
+    }
+
+    .invest-text h3 {
+        font-size: 30px;
+    }
+
+    .invest-text p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .all-investor {
+        display: block;
+    }
+
+    .invest-profile {
+        display: block;
+        margin-bottom: 100px;
+        padding: 90px 20px 30px 20px;
+    }
+
+    .invest-profile img {
+        left: 0;
+    }
+
+    .invest-profile p {
+        padding-top: 5px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .or {
+        height: 14%;
+        max-height: 100%;
+        padding: 40px 30px 0px 30px;
+    }
+
+    .-text {
+        display: block;
+    }
+
+    .-text h3 {
+        font-size: 30px;
+    }
+
+    .-text p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .all-or {
+        display: block;
+    }
+
+    .invest-profile {
+        display: block;
+        margin-bottom: 100px;
+        padding: 90px 20px 30px 20px;
+    }
+
+    .invest-profile img {
+        left: 0;
+    }
+
+    .invest-profile p {
+        padding-top: 5px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .investor {
+        height: 100%;
+        max-height: 14%;
+        padding: 40px 20px 0px 20px;
+    }
+
+    .invest-text {
+        display: block;
+    }
+
+    .invest-text h3 {
+        font-size: 27px;
+        line-height: 37px
+    }
+
+    .invest-text p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .all-investor {
+        display: block;
+    }
+
+    .invest-profile {
+        display: block;
+        margin-bottom: 100px;
+        padding: 90px 20px 30px 20px;
+    }
+
+    .invest-profile img {
+        left: 0;
+    }
+
+    .invest-profile p {
+        padding-top: 5px;
+        text-align: left;
+    }
+}
+
+/* FAQ & EMI CSS */
+
+.faq {
+    background: url(/Images/faq.png) no-repeat center center;
+    background-size: cover;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 90px 100px;
+}
+
+.emi-card {
+    width: 100%;
+    width: 550px;
+    padding: 32px;
+    border-radius: 24px;
+    background: #fff;
+}
+
+.emi-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #01447C;
+    margin-bottom: 45px;
+}
+
+.emi-row {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.emi-row label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.emi-row input[type="range"] {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.emi-row input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.emi-row input[type="range"]::-webkit-slider-runnable-track {
+    background: #d6e2eb;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.value-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #E4E4E7;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.emi-result {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 39px;
+    color: #000000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emi-amount {
+    font-size: 27px;
+    font-weight: 500;
+    color: #01447C;
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .faq {
+        display: block;
+        padding: 40px 30px;
+    }
+
+    .emi-card {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .faq {
+        display: block;
+        padding: 40px 30px;
+    }
+
+    .emi-card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .faq {
+        display: block;
+        padding: 50px 20px;
+    }
+
+    .faq-section {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .emi-card {
+        width: 100%;
+    }
+
+    .emi-result {
+        font-size: 14px;
+    }
+}
